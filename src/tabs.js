@@ -1,9 +1,15 @@
 import createRestaurantHomePage from "./restaurant";
 import createMenuPage from "./menu";
 import createContactPage from "./contact";
+import './style.css';
 
 const createTabs = () => {
     const content = document.querySelector('#content');
+
+    const header = document.createElement('div');
+    header.classList.add('header');
+
+    content.appendChild(header);
 
     const div1 = document.createElement('div');
     const div2 = document.createElement('div');
@@ -21,9 +27,9 @@ const createTabs = () => {
     div2.textContent = 'Menu';
     div3.textContent = 'Contact';
 
-    content.appendChild(div1);
-    content.appendChild(div2);
-    content.appendChild(div3);
+    header.appendChild(div1);
+    header.appendChild(div2);
+    header.appendChild(div3);
 
     div1.addEventListener('click', () => {
         clearContent();
@@ -47,4 +53,10 @@ function clearContent() {
     }
 }
 
-export default createTabs;
+export function createTabsExp() {
+    return createTabs();
+}
+
+export function clearContentExp() {
+    return clearContent();
+}

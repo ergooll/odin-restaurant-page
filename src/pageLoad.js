@@ -1,9 +1,11 @@
+import createFooter from './footer';
 import createRestaurantHomePage from './restaurant';
-import createTabs from './tabs';
+import { createTabsExp } from './tabs';
 
 function initialLoad() {
-    createTabs();
+    createTabsExp();
     createRestaurantHomePage();
+    createFooter();
 }
 
 export default initialLoad;
