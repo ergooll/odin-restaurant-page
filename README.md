@@ -1,3 +1,5 @@
 The Odin Project Restaurant Page
 
-Utilizing webpack to create a basic webpage for a fictional restaurant.
+Utilizing webpack and JS modules to create a basic webpage for a fictional restaurant.
+
+All of the HTML content is generated via Javascript.
