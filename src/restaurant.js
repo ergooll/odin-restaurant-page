@@ -8,6 +8,7 @@ const createRestaurantHomePage = () => {
 
     const pageContent = document.createElement('div');
     pageContent.classList.add('page-content');
+    pageContent.id = 'page-content-home';
 
     const hero = document.createElement('div');
     hero.classList.add('hero');
